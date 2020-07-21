@@ -1,0 +1,99 @@
+/*base styles */
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin:0;
+			padding: 0;
+			font-family: "Comic Sans Ms",cursive,sans-serif;
+		}
+		.row{		
+			margin-top: 5%;
+			margin-bottom: 5%;
+		}
+		h1{
+			margin-bottom: 15px;
+			text-align:center; 
+			color:maroon;
+			font-size: 50px;
+		}
+		.box{
+			width: 100%;
+			overflow:none;
+		}
+
+		.recipe-name{
+			text-align:center;
+			border:5px solid black;
+			width:100px;
+			height: 40px;
+			font-weight: bold; 
+			padding: 5px; 
+			float: right;
+			margin-right: 36px;
+			margin-top: 0px;
+			position: relative;
+			overflow: none;
+		}
+
+		.about{
+			border: 5px solid black;
+			width: 90%;
+			height:auto;
+			margin: 2.5%;
+			font-size: 25px;
+			color: black;
+			padding:2%;
+			padding-top:55px;
+			background-color: gray;
+		}
+		
+		.n1{
+			background-color: #ff9999;
+		}
+
+		.n2{
+			background-color: #66cc00;
+		}
+
+		.n3{
+			background-color: #FFFF00;
+		}
+		
+		/**** DESKTOP VIEW ****/
+		@media(min-width: 992px){
+			.col-lg-4{
+				float:left;
+				width: 33.33%;
+			}
+		}
+		/**** TABLET VIEW ****/
+		@media(min-width: 768px) and (max-width: 991px ){
+			.col-md-6,.col-md-12{
+				float: left;
+			}
+			.col-md-6{
+				width: 50%;
+			}
+			.col-md-12{
+				margin-left: -10px;
+				width: 100%;
+			}
+			
+			.n3{
+				margin-right:55px;
+				width:100px;
+			}
+
+		}
+		/**** MOBILE DEVICES ****/
+		@media(min-width: 0px) and (max-width: 767px){
+			.col-sm-12{
+				float: left;
+				width: 100%;
+			}
+
+			.recipe-name{
+				margin-right: 30px;
+			}
+		}
